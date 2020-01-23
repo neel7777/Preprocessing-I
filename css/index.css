@@ -1,1 +1,300 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid black;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+html .container,
+body .container {
+  max-width: 100%;
+  margin: 10px;
+}
+html .container .headerstuff,
+body .container .headerstuff {
+  display: flex;
+  justify-content: flex-end;
+  background-color: lightgrey;
+}
+@media (max-width: 500px) {
+  html .container .headerstuff,
+  body .container .headerstuff {
+    justify-content: space-evenly;
+  }
+}
+html .container .headerstuff .navbar,
+body .container .headerstuff .navbar {
+  display: flex;
+  align-content: space-between;
+}
+html .container .headerstuff .navbar a,
+body .container .headerstuff .navbar a {
+  font-size: 2rem;
+  background-color: lightsalmon;
+  margin: 15px;
+  text-decoration: none;
+  color: darkmagenta;
+}
+html .container .section1,
+body .container .section1 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightseagreen;
+  margin: 2rem;
+}
+html .container .section1 img,
+body .container .section1 img {
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 500px) {
+  html .container .section1 img,
+  body .container .section1 img {
+    display: none;
+  }
+}
+html .container .section1 .who,
+body .container .section1 .who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html .container .section1 .who h1,
+body .container .section1 .who h1 {
+  font-size: 6rem;
+}
+html .container .section1 .who h2,
+body .container .section1 .who h2 {
+  font-size: 3rem;
+}
+html .container .section2,
+body .container .section2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: lavender;
+  margin: 2rem;
+}
+@media (max-width: 500px) {
+  html .container .section2,
+  body .container .section2 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+  }
+}
+html .container .section2 h1,
+body .container .section2 h1 {
+  font-size: 5rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+html .container .section2 p,
+body .container .section2 p {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  html .container .section2 p,
+  body .container .section2 p {
+    font-size: 2rem;
+  }
+}
+html .container .section2 li,
+body .container .section2 li {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  html .container .section2 li,
+  body .container .section2 li {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+}
+html .container .section2 .aboutpartone,
+body .container .section2 .aboutpartone {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html .container .section2 .aboutpartwo,
+body .container .section2 .aboutpartwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .container .section3,
+body .container .section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background-color: goldenrod;
+}
+html .container .section3 h1,
+body .container .section3 h1 {
+  font-size: 5rem;
+}
+html .container .section3 .buttons,
+body .container .section3 .buttons {
+  margin: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+html .container .section3 .buttons a,
+body .container .section3 .buttons a {
+  background-color: indianred;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid green;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Bangers', cursive;
+}
+html .container .section3 p,
+body .container .section3 p {
+  font-size: 2rem;
+}
+html .container footer,
+body .container footer {
+  text-align: center;
+  font-size: 3rem;
+  background-color: lightgrey;
+}
